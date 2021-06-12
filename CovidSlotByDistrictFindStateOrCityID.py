@@ -2,7 +2,9 @@ import bs4
 import requests
 import json
 
-ide=624
+#*****************************Code to find district_id of different states and cities etc
+
+ide=1
 ans=""
 while 0>-1 :
     ide=ide+1
@@ -32,4 +34,3 @@ print(ide)
 #************************NOTE*****************
 
 #Prayagraj district_id is 624
-#this way one can find district_id of different states and cities etc

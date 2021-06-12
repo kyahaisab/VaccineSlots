@@ -2,6 +2,8 @@ import bs4
 import requests
 import json
 
+#**********************************Processing data in terms of date range, and displaying all suitable messages
+
 month="06"
 start_date=12
 end_date=20

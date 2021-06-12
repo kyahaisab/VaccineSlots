@@ -2,6 +2,11 @@ import bs4
 import requests
 import json
 
+#**************************** NOTE ***********************************************
+
+#Programe capable of sending desired info to the user in registered phone number
+#One can selet start date ,end date, Free or Paid vaccine, age limit.
+
 month="06"
 start_date=12
 end_date=20
@@ -38,13 +43,13 @@ while start_date<=end_date :
 if flag==1 :
     from twilio.rest import Client
 
-    account_sid = "AC35d94ea1c5b8bfb5eb7ce645d16b0154"
-    auth_token = "a9a411648302a8611d3a54708f1dfe22"
+    account_sid = "AC35d94ea1c5b8bfb5eb7ce645d16b0********"   # enter your sid
+    auth_token = "a9a411648302a8611d3a54708f1d*****"        #enter your token
     client = Client(account_sid, auth_token)
     if len(msg_body)>1500 :
         msg_body=msg_body[0:1500]
     for i in range(1):
-        client.messages.create(from_="+15512268221", body=msg_body, to="+917355182778")
+        client.messages.create(from_="+15512268221", body=msg_body, to="+91735518***")   # enter your phone number
 
 
 
